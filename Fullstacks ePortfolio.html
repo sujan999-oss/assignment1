@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="Fullstacks ePortfolio.css" rel="stylesheet">
+
+<style>
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #7db8eb;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    color: rgb(7, 6, 6);
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    color: #0d6efd;
+}
+
+.box {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+pre {
+    background: #e9ecef;
+    padding: 10px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #212529;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <h1>CET138 Full Stack Development </h1>
+    <p>Showcasing HTML, CSS, Bootstrap & JavaScript Skills</p>
+</header>
+
+<!-- Simple Navigation -->
+<nav class="bg-dark text-center py-2">
+    <a href="#fullstack">Full Stack</a>
+    <a href="#html">HTML</a>
+    <a href="#css">CSS</a>
+    <a href="#bootstrap">Bootstrap</a>
+    <a href="#javascript">JavaScript</a>
+</nav>
+
+<div class="container">
+
+    <!-- Full Stack Section -->
+    <section id="fullstack">
+        <h2 class="section-title">1. What is Full Stack Development?</h2>
+        <div class="box">
+            <p>Full stack development means working on both the front-end and back-end of a web application.</p>
+            <p><b>Front-end:</b> HTML, CSS, JavaScript (user interface)</p>
+            <p><b>Back-end:</b> Server, APIs, database handling</p>
+            <p><b>Example:</b> A login page where user enters details and server verifies them.</p>
+        </div>
+    </section>
+
+    <!-- HTML Section -->
+    <section id="html">
+        <h2 class="section-title">2. HTML</h2>
+        <div class="box">
+            <p>HTML is used to structure web content.</p>
+            <pre>
+&lt;h1&gt;Hello &lt;/h1&gt;
+&lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;a href=&quot;https://example.com&quot;&gt;Visit Site&lt;/a&gt;
+            </pre>
+            <p>HTML provides the basic structure of a webpage.</p>
+        </div>
+    </section>
+
+    <!-- CSS Section -->
+    <section id="css">
+        <h2 class="section-title">3. CSS</h2>
+        <div class="box">
+            <p>CSS is used to style HTML elements and improve design.</p>
+            <pre>
+body {
+    background-color: lightblue;
+    font-family: Arial;
+}
+h1 {
+    color: darkblue;
+}
+            </pre>
+            <p>CSS improves layout, colors, and readability.</p>
+        </div>
+    </section>
+
+    <!-- Bootstrap Section -->
+    <section id="bootstrap">
+        <h2 class="section-title">4. Bootstrap Framework</h2>
+        <div class="box">
+            <p>Bootstrap helps create responsive websites easily.</p>
+
+            <button class="btn btn-success">Bootstrap Button</button>
+            <button class="btn btn-primary">Primary Button</button>
+
+            <p class="mt-3">Example layout:</p>
+            <div class="row">
+                <div class="col-md-6 bg-light p-3">Column 1</div>
+                <div class="col-md-6 bg-secondary text-white p-3">Column 2</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Section -->
+    <section id="javascript">
+        <h2 class="section-title">5. JavaScript</h2>
+        <div class="box">
+            <p>JavaScript adds interactivity to web pages.</p>
+
+            <h4 id="text">Click the button to change text</h4>
+            <button class="btn btn-warning" onclick="changeText()">Click Me</button>
+
+            <script>
+                function changeText() {
+                    document.getElementById('text').innerHTML = 'You successfully change the text.';
+                }
+            </script>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 CET138 ePortfolio | Full Stack Development</p>
+</footer>
+
+</body>
+</html>
